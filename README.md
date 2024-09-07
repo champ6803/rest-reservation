@@ -35,6 +35,8 @@ $ npm run test:cov
 ```
 
 ## Testing the API
+
+```bash
 # Initialize Tables:
 POST /reservation/initialize
 Body: { "tableCount": 10 }
@@ -45,3 +47,14 @@ Body: { "customerCount": 6 }
 
 # Cancel Reservation:
 POST /reservation/cancel/:bookingId
+```
+
+## Building and Running the Docker Container
+
+```bash
+# Build the Docker Image:
+docker build -t rest-reservation .
+
+# Run the Docker Container:
+docker run -p 3000:3000 rest-reservation
+```
