@@ -29,9 +29,6 @@ $ npm run test
 
 # integration tests
 $ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## Testing the API
